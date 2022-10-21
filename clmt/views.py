@@ -69,8 +69,8 @@ def doRegistration(request):
     if password != confirm_password:
         messages.error(request, 'Both passwords should match!!')
         return render(request, 'registration.html')
-
-    is_user_exists = CustomUser.objects.filter(email=email_id).exists()
+is_user_exists=False
+    #is_user_exists = CustomUser.objects.filter(email=email_id).exists()
 
     if is_user_exists:
         messages.error(request, 'User with this email id already exists. Please proceed to login!!')
@@ -85,9 +85,9 @@ def doRegistration(request):
 
     username = email_id.split('@')[0].split('.')[0]
 
-    if CustomUser.objects.filter(username=username).exists():
-        messages.error(request, 'User with this username already exists. Please use different username')
-        return render(request, 'registration.html')
+   # if CustomUser.objects.filter(username=username).exists():
+      #  messages.error(request, 'User with this username already exists. Please use different username')
+      #  return render(request, 'registration.html')
 
     user = CustomUser()
     user.username = username
