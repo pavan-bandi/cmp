@@ -69,7 +69,7 @@ def doRegistration(request):
     if password != confirm_password:
         messages.error(request, 'Both passwords should match!!')
         return render(request, 'registration.html')
-is_user_exists=False
+    is_user_exists=False
     #is_user_exists = CustomUser.objects.filter(email=email_id).exists()
 
     if is_user_exists:
