@@ -68,6 +68,18 @@ TEMPLATES = [
         },
     },
 ]
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'pavan_database',
+        'USER':'root',
+        'PASSWORD':'Geetha'
+
+
+
+    }
+}
+
 
 WSGI_APPLICATION = 'cmp.wsgi.application'
 
