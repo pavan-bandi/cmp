@@ -69,13 +69,13 @@ TEMPLATES = [
     },
 ]
 
-if 'DATABASE_URL' in os.environ:
-    import dj_database_url
-    DATABASES = {'default':{'ENGINE': dj_database_url.config()}
-
-
-
-    
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'jntu',
+        'USER':'root',
+        'PASSWORD':'Geetha'
+    }
 }
 
 
