@@ -86,8 +86,12 @@ WSGI_APPLICATION = 'cmp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-       'NAME':"postgresql-sinuous-15697"
+           "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": "du73pd7tmoarr",
+        "USER": "vdcxymshuhzkrr",
+        "PASSWORD": "1c2f4caf3bfd048c0eb237464c9112285978747d2fe2894329952af54f35e35f",
+        "HOST": "ec2-18-209-78-11.compute-1.amazonaws.com",
+        "PORT": "5432",
        
     }
 }
