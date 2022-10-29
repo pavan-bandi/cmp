@@ -87,11 +87,7 @@ WSGI_APPLICATION = 'cmp.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "django_deploy",
-        "USER": "foo",
-        "PASSWORD": "bar",
-        "HOST": "localhost",
-        "PORT": "5432",
+   
     }
 }
 # Password validation
