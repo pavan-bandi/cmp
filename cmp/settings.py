@@ -97,7 +97,7 @@ DATABASES = {
 }
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
-DATABASE_URL=$(heroku config:get DATABASE_URL -a clmt) 
+DATABASE_URL=(heroku config:get DATABASE_URL -a clmt) 
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
