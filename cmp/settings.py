@@ -86,13 +86,13 @@ WSGI_APPLICATION = 'cmp.wsgi.application'
 
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'jntu',
-        'USER':'root',
-        'PASSWORD':'Geetha'
+    "default": {
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
     }
 }
+import dj_database_url
+
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
