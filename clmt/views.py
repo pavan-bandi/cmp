@@ -37,7 +37,7 @@ def doLogin(request):
     print(request.user)
 
     if user.user_type == CustomUser.STUDENT:
-        return redirect('student_home/')
+        return redirect('student_view_attendance/')
     elif user.user_type == CustomUser.STAFF:
         return redirect('staff_home/')
     elif user.user_type == CustomUser.HOD:
