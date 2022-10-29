@@ -50,7 +50,7 @@ def student_home(request):
             "data_present": data_present,
             "data_absent": data_absent
         }
-        return render(request, "student_template/student_home_template.html")
+        return render(request, "student_template/student_home_template.html",context)
 
 
 def student_view_attendance(request):
