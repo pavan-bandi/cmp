@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'cmp.wsgi.application'
 
 DATABASES = {
     'default': {
-           "ENGINE": "django.db.backends.postgresql",
+           "ENGINE": "django.db.backends.postgresql_psycopg2",
         "NAME": "du73pd7tmoarr",
         "USER": "vdcxymshuhzkrr",
         "PASSWORD": "1c2f4caf3bfd048c0eb237464c9112285978747d2fe2894329952af54f35e35f",
