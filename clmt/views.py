@@ -43,7 +43,7 @@ def doLogin(request):
     elif user.user_type == CustomUser.HOD:
         return redirect('admin_home/')
 
-    return render(request, 'home.html')
+    return render(request, 'student_template/student_home.html')
 
 
 def registration(request):
