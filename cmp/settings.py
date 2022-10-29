@@ -84,11 +84,13 @@ WSGI_APPLICATION = 'cmp.wsgi.application'
 # ie if Heroku server
 
 
+
 DATABASES = {
     'default': {
-           "ENGINE": "django.db.backends.postgresql",
-       
-       
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'jntu',
+        'USER':'root',
+        'PASSWORD':'Geetha'
     }
 }
 # Password validation
