@@ -51,8 +51,8 @@ def registration(request):
 
 
 def doRegistration(request):
-    first_name = request.GET.get('first_name')
-    last_name = request.GET.get('last_name')
+    first_name = request.GET.get('fname')
+    last_name = request.GET.get('lname')
     email_id = request.GET.get('email')
     password = request.GET.get('password')
     confirm_password = request.GET.get('confirmPassword')
